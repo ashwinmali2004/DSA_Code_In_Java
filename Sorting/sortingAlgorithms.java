@@ -8,7 +8,9 @@ public class sortingAlgorithms {
         // selectionSort(arr);
         // bubbleSort(arr);
         // brickSort(arr);
-        countSort(arr);
+        // countSort(arr);
+        // pigeonholeSort(arr);
+        cycleSort(arr);
         printArray(arr, "Sorted array");
     }
 
@@ -131,10 +133,10 @@ public class sortingAlgorithms {
             res[countVal] = val;
         }
         printArray(res, "After CountSort:");
-        ;
+
     }
 
-    // Radix Sort
+    // Sorting->
 
     public static void countingSortWithDigit(int arr[], int digit) {
         // find K,
@@ -199,5 +201,54 @@ public class sortingAlgorithms {
             countingSortWithDigit(arr, digit);
         }
 
+    }
+
+    public static void pigeonholeSort(int arr[]){
+        int n=arr.length;
+        int maxEl=Integer.MIN_VALUE;
+        int minEl=Integer.MAX_VALUE;
+        for(int i=0;i<n;i++){
+            if(arr[i]>maxEl){
+                maxEl=arr[i];
+            }
+            if(arr[i]<minEl){
+                minEl=arr[i];
+            }
+        }
+        if(maxEl == Integer.MIN_VALUE || minEl == Integer.MAX_VALUE){
+            System.out.println("Empty Array");
+            return;
+        }
+
+        int size = maxEl-minEl+1;
+        int pigeonhole[] = new int[size];
+
+        for(int i=0;i<n;i++){
+            int index = arr[i] - minEl;
+            pigeonhole[index]++;
+        }
+
+        int insertionIndex=0;
+        for(int j=0;j<size;j++){
+            while(pigeonhole[j]>0){
+                arr[insertionIndex]=j+minEl;
+                insertionIndex++;
+                pigeonhole[j]--;
+            }
+        }
+    }
+
+    public static void cycleSort(int[] arr){
+        int n=arr.length;
+        int index=0;
+        while(index<n){
+            int element = arr[index];
+            int actualPos = element-1;
+            if(arr[index]<n && arr[index]!=arr[actualPos]){
+                swap(arr,index,actualPos);
+            }else{
+                index++;
+            }
+        }
     }
 }
