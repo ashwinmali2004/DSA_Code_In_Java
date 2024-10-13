@@ -12,6 +12,9 @@ public class QuestionsOnString {
         // To check that the String is Palindrome or not
         checkPalindrome("naman");
         checkPalindrome("Ashwin");
+
+        // To solve the given problem 
+        leetcode151("a good   example");
     }
 
     public static void printSubString(String s){
@@ -69,4 +72,28 @@ public class QuestionsOnString {
             System.out.println(" Not a Palindrome!");
         }
     }
+
+    public static void leetcode151(String s){
+        // System.out.println("Given String \""+ s +"\" is :");
+        // String[] str = s.trim().split("\\s+"); 
+        // String ans = "";
+        // for (int i = str.length - 1; i >= 0; i--) {
+        //     ans += str[i] + (i > 0 ? " " : "");
+        // }
+        // System.out.println(ans);
+
+        // approch-2 Optimized Using StringBuilder
+
+        String[] words = s.split(" ");
+        StringBuilder str = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            if (!words[i].equals("")) {
+                str.append(words[i]);
+                str.append(" ");
+            }
+        }
+        System.out.println(str.toString().trim());
+    }
+
+    
 }
