@@ -1,5 +1,7 @@
 package String;
 
+import Searching.Arrays;
+
 public class QuestionsOnString {
     public static void main(String[] args) {
         // To print all the substrings of given string
@@ -15,6 +17,13 @@ public class QuestionsOnString {
 
         // To solve the given problem 
         leetcode151("a good   example");
+
+        // To Find that give two Strings are Anagrams are not
+        if(isAnagram("abcd","dcaba")){
+            System.out.println("Given Strings are anagram!!");
+        }else{
+            System.out.println("Are not anagram!!");
+        }
     }
 
     public static void printSubString(String s){
@@ -95,5 +104,71 @@ public class QuestionsOnString {
         System.out.println(str.toString().trim());
     }
 
-    
+    public static boolean isAnagram(String s, String t){
+
+        if(s.length()!=t.length()){
+            return false;
+        }
+        int len = s.length();
+        int freq[] = new int[26];
+
+        int indexA = 0;
+        int indexB = 0;
+
+        while(indexA < len){
+            char charA = s.charAt(indexA);
+            int freqIndexA = charA-'a';
+            freq[freqIndexA]+=1;
+
+            char charB = t.charAt(indexB);
+            int freqIndexB = charB-'a';
+            freq[freqIndexB]-=1;
+            
+            indexA++;
+            indexB++;
+        }
+        
+        for(int i=0;i<26;i++){
+            if(freq[i]!=0){
+                return false;
+            }
+        }
+        return true;
+
+
+        // Approch-2
+        // Using Sorting-->
+        // if(s.length() != t.length()) return false;
+
+        // char[] sc = s.toCharArray();                         
+        // char[] tc = t.toCharArray();
+
+        // Arrays.sort(sc);                         
+        // Arrays.sort(tc);
+
+        // if(Arrays.equals(sc, tc)) return true;
+
+        // return false;  
+
+
+        // Aprroch-3
+        // Using MapFucntion-->
+        // Map<Character, Integer> map = new HashMap<>();
+
+        // for(char x : s.toCharArray()){
+        //     map.put(x, map.getOrDefault(x,0)+1);
+        // }
+
+        // for(char x : t.toCharArray()){
+        //     map.put(x, map.getOrDefault(x,0)-1);
+        // }
+
+        // for(int val : map.values()){
+        //     if(val != 0){
+        //         return false;
+        //     }
+        // }
+
+        // return true;
+    }
 }
