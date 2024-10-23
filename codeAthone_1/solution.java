@@ -1,3 +1,4 @@
+package codeAthone_1;
 import java.util.Scanner;
 
 public class solution {
@@ -65,8 +66,7 @@ public class solution {
         
         return maxMoney;
     }
-
-
+    
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         String s = "";
