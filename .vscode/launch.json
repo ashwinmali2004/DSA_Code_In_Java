@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "BitManipulation.Basics",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BitOperations",
+            "request": "launch",
+            "mainClass": "BitManipulation.BitOperations",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicsLinkedList",
+            "request": "launch",
+            "mainClass": "CollectionFrameWorks.BasicsLinkedList",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicsQueue",
+            "request": "launch",
+            "mainClass": "CollectionFrameWorks.BasicsQueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicsStack",
+            "request": "launch",
+            "mainClass": "CollectionFrameWorks.BasicsStack",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "MyQueue",
+            "request": "launch",
+            "mainClass": "Queue.MyQueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "AgressiveCow",
+            "request": "launch",
+            "mainClass": "Searching.AgressiveCow",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch2",
+            "request": "launch",
+            "mainClass": "Searching.BinarySearch2",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "SearchAlgorithms",
+            "request": "launch",
+            "mainClass": "Searching.SearchAlgorithms",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "kthElement",
+            "request": "launch",
+            "mainClass": "Searching.kthElement",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "sortingAlgorithms",
+            "request": "launch",
+            "mainClass": "Sorting.sortingAlgorithms",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicsOfStack",
+            "request": "launch",
+            "mainClass": "Stack.BasicsOfStack",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "stackQuestions",
+            "request": "launch",
+            "mainClass": "Stack.stackQuestions",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicFunctions",
+            "request": "launch",
+            "mainClass": "String.BasicFunctions",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "HackerRank",
+            "request": "launch",
+            "mainClass": "String.HackerRank",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "QuestionsOnString",
+            "request": "launch",
+            "mainClass": "String.QuestionsOnString",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Stringformating",
+            "request": "launch",
+            "mainClass": "String.Stringformating",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "solution",
+            "request": "launch",
+            "mainClass": "codeAthone_1.solution",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        }
+    ]
+}

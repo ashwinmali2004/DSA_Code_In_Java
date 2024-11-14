@@ -1,10 +1,11 @@
 package CollectionFrameWorks;
-
 import java.util.*;
-
-public class BasicsList {
+public class BasicsLinkedList {
+    // In LinkedList also we have same functions as of the ArrayList.
+    // In LinkedList the function works on pointer system.
+    // As although linkedlist takes more time than ArrayList 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new LinkedList<>();
         list.add(6);
         list.add(1);
         list.add(1);
@@ -89,3 +90,4 @@ class Student {
     }
 
 }
+
