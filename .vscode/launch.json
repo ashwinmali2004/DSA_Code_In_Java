@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyDqueue",
+            "request": "launch",
+            "mainClass": "Queue.MyDqueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "MyCircularQueue",
+            "request": "launch",
+            "mainClass": "Queue.MyCircularQueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
