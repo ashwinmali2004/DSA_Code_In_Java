@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StackUsingQueue",
+            "request": "launch",
+            "mainClass": "Queue.StackUsingQueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "QueueUsingStack",
+            "request": "launch",
+            "mainClass": "Queue.QueueUsingStack",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "MyDqueue",
             "request": "launch",
             "mainClass": "Queue.MyDqueue",
