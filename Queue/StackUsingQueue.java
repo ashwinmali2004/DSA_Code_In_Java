@@ -32,7 +32,7 @@ public class StackUsingQueue {
     public static void main(String[] args) {
 
         StackUsingQueue stack = new StackUsingQueue();
-        stack.push(10);
+        stack.push(10);   
         System.out.println( stack.peek()); // 10
         stack.push(20);
         stack.push(30);
