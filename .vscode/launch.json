@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DijkstraAlgorithm",
+            "request": "launch",
+            "mainClass": "Graph.DijkstraAlgorithm",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "StackUsingQueue",
             "request": "launch",
             "mainClass": "Queue.StackUsingQueue",
