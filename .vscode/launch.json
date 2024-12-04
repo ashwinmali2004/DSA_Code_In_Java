@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Generic_Class",
+            "request": "launch",
+            "mainClass": "ObjectOrientedInJava.Generic_Class",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Generic_Class",
+            "request": "launch",
+            "mainClass": "Generic_Class",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "GenericClasses",
+            "request": "launch",
+            "mainClass": "GenericClasses",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "DijkstraAlgorithm",
             "request": "launch",
             "mainClass": "Graph.DijkstraAlgorithm",
