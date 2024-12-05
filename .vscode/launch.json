@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BasicsHashSet",
+            "request": "launch",
+            "mainClass": "CollectionFrameWorks.BasicsHashSet",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicsMap",
+            "request": "launch",
+            "mainClass": "CollectionFrameWorks.BasicsMap",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "Generic_Class",
             "request": "launch",
             "mainClass": "ObjectOrientedInJava.Generic_Class",

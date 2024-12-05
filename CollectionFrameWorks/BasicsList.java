@@ -56,7 +56,7 @@ public class BasicsList {
         });
 
         List<Student> list1 = new ArrayList<>();
-        list1.add(new Student(10, "shashwat"));
+        list1.add(new Student(10, "Ashwin"));
         list1.add(new Student(5, "Ayush"));
         list1.add(new Student(15, "Pavleen"));
         list1.add(new Student(15, "Aashray"));
@@ -65,6 +65,8 @@ public class BasicsList {
             public int compare(Student A, Student B) {
 
                 int res = B.rollNumber - A.rollNumber;
+
+                // If the roll number is same than compare lexographically(Alphabetically)
                 if (res == 0) {
                     return B.name.compareTo(A.name);
                 }
