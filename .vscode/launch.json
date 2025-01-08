@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DoublyLinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList.DoublyLinkedList",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "DoubleLinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList.DoubleLinkedList",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "BasicLinkedList",
             "request": "launch",
             "mainClass": "LinkedList.BasicLinkedList",
