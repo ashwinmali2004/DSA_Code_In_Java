@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UsingCustomHashMap",
+            "request": "launch",
+            "mainClass": "HashMap.UsingCustomHashMap",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "HashMap.Basics",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "DoublyLinkedList",
             "request": "launch",
             "mainClass": "LinkedList.DoublyLinkedList",
