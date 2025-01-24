@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MostFrequentElement",
+            "request": "launch",
+            "mainClass": "HashMap.MostFrequentElement",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "UsingCustomHashMap",
             "request": "launch",
             "mainClass": "HashMap.UsingCustomHashMap",
