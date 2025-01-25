@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashSetExample",
+            "request": "launch",
+            "mainClass": "HashMap.HashSetExample",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "ArraySubsetOfAnotherArray",
+            "request": "launch",
+            "mainClass": "HashMap.ArraySubsetOfAnotherArray",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "MostFrequentElement",
             "request": "launch",
             "mainClass": "HashMap.MostFrequentElement",
