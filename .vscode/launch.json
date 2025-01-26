@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SubArrayPatterns",
+            "request": "launch",
+            "mainClass": "HashMap.SubArrayPatterns",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "MinimumNoOfSubsetsWithDistinctElement",
+            "request": "launch",
+            "mainClass": "HashMap.MinimumNoOfSubsetsWithDistinctElement",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "HashSetExample",
             "request": "launch",
             "mainClass": "HashMap.HashSetExample",
