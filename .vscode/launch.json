@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BucketSort",
+            "request": "launch",
+            "mainClass": "HashMap.BucketSort",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "SubArrayPatterns",
             "request": "launch",
             "mainClass": "HashMap.SubArrayPatterns",
