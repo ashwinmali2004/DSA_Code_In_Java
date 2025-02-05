@@ -41,10 +41,12 @@ public class BucketSort {
             }
             buckets[index].add(targetIndex,arr[i]);
         }
+
 //        //Sort the elements
 //        for(int i=0;i<bucketSize;i++){ //K
 //            Collections.sort(buckets[i]);
 //        }
+
         // Store the elements into result list
         ArrayList<Float> res = new ArrayList<>();
         for(int i=0;i<bucketSize;i++){ //N*M+K

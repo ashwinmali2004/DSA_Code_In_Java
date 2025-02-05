@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TreeBFS",
+            "request": "launch",
+            "mainClass": "Tree.TreeBFS",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "BucketSort",
             "request": "launch",
             "mainClass": "HashMap.BucketSort",
