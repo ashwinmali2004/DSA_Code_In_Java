@@ -26,6 +26,8 @@ public class preOrderDFS {
         while(!stack.isEmpty()){
             TreeNode node = stack.pop();
             list.add((Integer) node.data);
+            
+            // First add right in this approch due to stack than left
             if(node.right != null){
                 stack.push(node.right);
             }
