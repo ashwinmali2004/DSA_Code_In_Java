@@ -10,7 +10,7 @@ public class BasicsMap {
 
         // Map<Integer, String> classMap = new TreeMap<>();
         // It Automatically sorts on the basis of the key
-        // Above TreeMap uses the Hashing+TreeMap(BST+Red Hat Tree) technique.
+        // Above TreeMap uses the Hashing+TreeMap(BST+Red Black Tree) technique.
 
         classMap.put(1, "Ashwin");
         classMap.put(7, "Ayush");
