@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Tree.BST.Basics",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "TreeBFS",
             "request": "launch",
             "mainClass": "Tree.TreeBFS",
