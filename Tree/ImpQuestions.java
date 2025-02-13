@@ -2,16 +2,18 @@ package Tree;
 
 import java.util.*;
 public class ImpQuestions {
-    class TreeNode<E>{
-        E data;
+    public class TreeNode {
+        int val;
         TreeNode left;
         TreeNode right;
-        TreeNode(E data){
-            this.data = data;
-            this.left = null;
-            this.right = null;
+        // TreeNode() {}
+        // TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
         }
-    }
+   }
     public static void main(String[] args) {
         
     }
@@ -33,7 +35,7 @@ public class ImpQuestions {
             int size = q.size();
             for(int i=0;i<size;i++){
                 TreeNode node = q.poll();
-                levelList.add(node.data);
+                levelList.add(node.val);
                 if(node.left!=null){
                     q.offer(node.left);
                 }
