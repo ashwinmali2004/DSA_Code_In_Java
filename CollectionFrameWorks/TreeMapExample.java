@@ -67,5 +67,35 @@ public class TreeMapExample {
         for (Map.Entry<ComparablePair, String> entry : customTreeMap.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
+
+        // New TreeMap with Integer keys and Integer values
+        TreeMap<Integer, Integer> intTreeMap = new TreeMap<>();
+
+        // Adding elements
+        intTreeMap.put(10, 100);
+        intTreeMap.put(20, 200);
+        intTreeMap.put(30, 300);
+        intTreeMap.put(40, 400);
+        intTreeMap.put(50, 500);
+
+        System.out.println("\nTreeMap with Integer keys and Integer values:");
+        for (Map.Entry<Integer, Integer> entry : intTreeMap.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+
+        // Demonstrating methods like ceilingKey, floorKey, higherKey, lowerKey
+        System.out.println("\nMethods with TreeMap<Integer, Integer>:");
+
+        // ceilingKey - Returns the least key greater than or equal to the given key
+        System.out.println("Ceiling of 25: " + intTreeMap.ceilingKey(25)); // Should return 30
+
+        // floorKey - Returns the greatest key less than or equal to the given key
+        System.out.println("Floor of 25: " + intTreeMap.floorKey(25)); // Should return 20
+
+        // higherKey - Returns the least key strictly greater than the given key
+        System.out.println("Higher than 25: " + intTreeMap.higherKey(25)); // Should return 30
+
+        // lowerKey - Returns the greatest key strictly less than the given key
+        System.out.println("Lower than 25: " + intTreeMap.lowerKey(25)); // Should return 20
     }
 }
