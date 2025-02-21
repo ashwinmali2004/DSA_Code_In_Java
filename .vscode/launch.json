@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PriorityQueueExample",
+            "request": "launch",
+            "mainClass": "Tree.PriorityQueueExample",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "PriorityQueue",
+            "request": "launch",
+            "mainClass": "Tree.PriorityQueue",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Heap",
+            "request": "launch",
+            "mainClass": "Tree.Heap",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "TreeMapExample",
             "request": "launch",
             "mainClass": "CollectionFrameWorks.TreeMapExample",
