@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BasicGraph2",
+            "request": "launch",
+            "mainClass": "Graph.BasicGraph2",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "BasicGraph",
+            "request": "launch",
+            "mainClass": "Graph.BasicGraph",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "pattern2",
+            "request": "launch",
+            "mainClass": "PatternProblem.pattern2",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "pattern1",
+            "request": "launch",
+            "mainClass": "PatternProblem.pattern1",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "PriorityQueueExample",
             "request": "launch",
             "mainClass": "Tree.PriorityQueueExample",
