@@ -92,24 +92,53 @@ public class BasicGraph2 {
         }
     }
 
+    public void findDegreeInUnDirectedGraph(int nodes){
+        int degree[] = new int[nodes];
+        for(int i=0;i<nodes;i++){
+            degree[i]=adjList.get(i).size();
+        }
+        System.out.println("Undirected Graph Degree:");
+        for(int i=0;i<nodes;i++){
+            System.out.println("Node "+i+" -> Degree: "+ degree[i]);
+        }
+    }
+
+    public void findDegreeInDirectedGraph(int nodes){
+        int inDegree[] = new int[nodes];
+        int outDegree[] = new int[nodes];
+
+        for(int i=0;i<nodes;i++){
+            outDegree[i] = adjList.get(i).size();
+            for(int v : adjList.get(i)){
+                inDegree[v]++;
+            }
+        }
+        System.out.println("Directed Graph Indegree and Outdegree:");
+        for(int i=0;i<nodes;i++){
+            System.out.println("Node " + i + " -> Indegree: " + inDegree[i] + ", Outdegree: " + outDegree[i]);
+        }
+    }
+
     public static void main(String[] args) {
         int edges[][] = {{0,2}, {0,1}, {1,3}};
         int nodes = 4;
         BasicGraph2 graph = new BasicGraph2(nodes);
-        // System.out.println("Directed Graph ->");
-        // graph.addEdgesInList(edges, true);
-        // graph.printList();
+        System.out.println("Directed Graph ->");
+        graph.addEdgesInList(edges, true);
+        graph.printList();
         // System.out.println("Undirected Graph ->");
         // graph.addEdgesInList(edges, false);
         // graph.printList();
 
-        int edgesWeight[][] = {{0,2,10}, {0,1,20}, {1,3,30}};
-        System.out.println("Weighted Directed Graph ->");
-        graph.addEdgesWithWeight(edgesWeight, true);
-        graph.printWeightedList();
-        System.out.println("Weighted Undirected Graph ->");
-        graph.addEdgesWithWeight(edgesWeight, false);
-        graph.printWeightedList();
+        // int edgesWeight[][] = {{0,2,10}, {0,1,20}, {1,3,30}};
+        // System.out.println("Weighted Directed Graph ->");
+        // graph.addEdgesWithWeight(edgesWeight, true);
+        // graph.printWeightedList();
+        // System.out.println("Weighted Undirected Graph ->");
+        // graph.addEdgesWithWeight(edgesWeight, false);
+        // graph.printWeightedList();
 
+        graph.findDegreeInDirectedGraph(nodes);
+        graph.findDegreeInUnDirectedGraph(nodes);
     }
 }
