@@ -12,5 +12,8 @@ public class Questions {
         // 1311 get watched videos
         // 994 rotting oranges
         // 1443 minimum time to collect all apples in a tree
+        // 947 most stones removed with same column or row
+        // 721. Accounts Merge 
+        
     }
 }
