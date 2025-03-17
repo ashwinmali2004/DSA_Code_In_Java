@@ -43,5 +43,45 @@ public class Questions {
     }
 
     // 746 min cost climbing stairs
+    // dp-->
+    public int minCostClimbingStairs(int[] cost) {
+        int n = cost.length;
+        int dp[] = new int[n + 1];
+        Arrays.fill(dp, -1);
+        return recur(n, cost, dp);
+    }
+
+    public int recur(int n, int cost[], int dp[]) {
+        //base case
+        if (n == 0 || n == 1) {
+            dp[n] = 0;
+            return 0;
+        }
+        if (dp[n] != -1) {
+            return dp[n];
+        }
+        int oneStep = cost[n - 1] + recur(n - 1, cost, dp);
+        int twoStep = cost[n - 2] + recur(n - 2, cost, dp);
+        dp[n] = Math.min(oneStep, twoStep);
+        return dp[n];
+    }
     
+    // bottom-up space optimized
+
+    // public int minCostClimbingStairs(int[] cost) {
+    //     int n = cost.length;
+    //     int prev1 = 0;
+    //     int prev2 = 0;
+    //     int ans = 0;
+    //     for(int i=2;i<=n;i++){
+    //         int oneStep = cost[i-1]+prev1;
+    //         int twoStep = cost[i-2]+prev2;
+    //         ans = Math.min(oneStep, twoStep);
+    //         prev2 = prev1;
+    //         prev1 = ans;
+    //     }
+    //     return ans;
+    // }
+
+    // 
 }
