@@ -33,4 +33,15 @@ public class Questions {
     // Using the concept of the fibonnaci but the base condition will be from 1 to n
 
     // 338 counting bits
+    // O(n)
+    public int[] countBits(int n) {
+        int dp[] = new int[n+1];
+        for(int i=1;i<=n;i++){
+            dp[i] = dp[i>>1] + (i&1);
+        }
+        return dp;
+    }
+
+    // 746 min cost climbing stairs
+    
 }
