@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DSU",
+            "request": "launch",
+            "mainClass": "Graph.DSU",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "BasicGraph2",
             "request": "launch",
             "mainClass": "Graph.BasicGraph2",
