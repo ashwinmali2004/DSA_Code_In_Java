@@ -64,6 +64,7 @@ public class DSU {
     }
 
     // union function by using size[]
+    // By the help of size[] you can easily calculate the no. of nodes in a component
     public void unionBySize(int node1, int node2){
         // find the root parent
         int rootParent1 = findRootParent(node1);
@@ -99,5 +100,6 @@ public class DSU {
         System.out.println("total components -> "+ dsu.components);
         System.out.println(dsu.findRootParent(0) == dsu.findRootParent(3));
 
+        // Note:-You cant use DSU of Union by rank and union by size code
     }
 }
