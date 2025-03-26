@@ -70,10 +70,11 @@ public class BinarySearch2 {
         int arr[] = {2, 2, 4, 5, 7, 9, 25, 56, 88, 94};
         // binarySearch(arr, 25);  // Example target
 
-        int barr[] = {2,5,7,11,22,10,2,1};
+        // increasing and decreasing array
+        int barr[] = {2,5,7,11,22,99,10,2,1};
         int baarr[] = {22,1,0};
         // System.out.println(bitonicMinElement(barr));
-        System.out.println(bitonicMaxElement(baarr));
+        System.out.println(bitonicMaxElement(barr));
     }
 
 }

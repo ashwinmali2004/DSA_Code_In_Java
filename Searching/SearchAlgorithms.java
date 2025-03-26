@@ -6,16 +6,17 @@ public class SearchAlgorithms {
 //        int index = jumpSearch(arr, 77);
 //        int index = ternarySearch(arr,77);
 //        int index = exponentialSearch(arr,100);
-        int index = interpolationSearch(arr,2); // -> log2(log2N)?
+        int index = binarySearchInRange(arr,15,0,arr.length); // -> log2(log2N)?
         if (index == -1) {
             System.out.println("Element not found");
         } else {
             System.out.println("Found element at index " + index);
         }
     }
+    
     public static int jumpSearch(int arr[], int target) {
         int n = arr.length;
-        int blockSize = (int)Math.sqrt(n);
+        int blockSize = (int)Math.sqrt(n);  // take the block size as sqaure root of the array size
         int startIndex = 0;
         int endIndex = blockSize;
 
@@ -68,6 +69,7 @@ public class SearchAlgorithms {
         return index;
     }
 
+    // sorted array
     public static int exponentialSearch(int arr[], int target){
 
         if(arr[0] == target){
@@ -87,6 +89,7 @@ public class SearchAlgorithms {
 
     }
     
+    // same as binary search only we had to pass the start and end index in the function
     static int binarySearchInRange(int arr[], int target, int start, int end){
         int ans = -1;
         while (start<=end){
@@ -103,11 +106,13 @@ public class SearchAlgorithms {
         return ans;
     }
 
+    // sorted array + Uniform array [2,4,6,8,10,12] --> 2gap
+    // if data is uniform than the algorithm is more efficient than the binary search
     static int interpolationSearch(int arr[], int target){
         int start = 0;
         int end = arr.length-1;
         int index = -1;
-        while (start <= end && target>=arr[start] && target <=arr[end]){
+        while (start <= end && target >= arr[start] && target <= arr[end]){
             if(arr[start] == arr[end]){
                 if(arr[start] == target){
                     index = start;
