@@ -14,7 +14,7 @@ public class AgressiveCow {
             return -1;
         }
 
-        java.util.Arrays.sort(stalls);
+        Arrays.sort(stalls);
 
         int start = 1;
         int end = stalls[n-1] - stalls[0];

@@ -78,7 +78,7 @@ public class SearchAlgorithms {
         int i=1;
         int n = arr.length;
 
-//        enclose the target
+    // enclose the target
         while (i<n && arr[i]<=target){
             i = 2*i;
         }
