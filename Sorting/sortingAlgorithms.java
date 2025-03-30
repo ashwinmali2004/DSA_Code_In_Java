@@ -74,8 +74,9 @@ public class sortingAlgorithms {
             // printArray(arr, "After pass"+i); //optimization of the code checked!
         }
     }
-
+    
     public static void brickSort(int arr[]) {
+        // It is also known as parity or even odd sort
         int n = arr.length;
         boolean isSorted = false;
         while (!isSorted) {
@@ -239,6 +240,7 @@ public class sortingAlgorithms {
     }
 
     public static void cycleSort(int[] arr){
+        // given in range
         int n=arr.length;
         int index=0;
         while(index<n){
