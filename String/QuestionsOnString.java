@@ -28,7 +28,7 @@ public class QuestionsOnString {
 
     public static void printSubString(String s){
         System.out.println("Substrings of the String \""+ s +"\" is :");
-        int size = s.length()*(s.length()+1)/2;
+        int size = s.length()*(s.length()+1)/2;  //n(n+1)/2 no. of substring of a string
         int index = 0;
         String[] str = new String[size];
         for(int i=0;i<s.length();i++){
@@ -42,6 +42,7 @@ public class QuestionsOnString {
         System.err.println();
     }
 
+    // It looks like O(n) complexity but in string concatination it is O(n^2)
     public static void printReverseString(String s){
         System.out.println("Reverse of the String \""+ s +"\" is :");
         String str = "";
@@ -51,18 +52,21 @@ public class QuestionsOnString {
         System.out.println(str);
     }
 
+    // better approch
     public static void printReverseString2(String s){
         StringBuilder ans = new StringBuilder(s);
-        int n = ans.length();
-        for(int i=0;i<n/2;i++){
-            char firstChar = ans.charAt(i);
-            char lastChar = ans.charAt(n-1-i);
-            ans.setCharAt(i, lastChar);
-            ans.setCharAt(n-1-i, firstChar);
-        }
-        System.out.println(ans.toString());
+        // int n = ans.length();
+        // for(int i=0;i<n/2;i++){
+        //     char firstChar = ans.charAt(i);
+        //     char lastChar = ans.charAt(n-1-i);
+        //     ans.setCharAt(i, lastChar);
+        //     ans.setCharAt(n-1-i, firstChar);
+        // }
+        System.out.println(ans.reverse().toString());
     }
 
+    // O(n/2) and O(1) 
+    // if we use StringBuilder reverse it and compare with equal than O(n) and O(n)
     public static void checkPalindrome(String s){
         System.out.println("Given String \""+ s +"\" is :");
         boolean isTrue = true;

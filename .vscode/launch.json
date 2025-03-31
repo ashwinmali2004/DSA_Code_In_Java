@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "Sorting.MergeSort",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Sorting.QuickSort",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "DSU",
             "request": "launch",
             "mainClass": "Graph.DSU",
