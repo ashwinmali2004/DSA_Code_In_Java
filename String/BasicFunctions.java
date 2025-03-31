@@ -1,13 +1,13 @@
 package String;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class BasicFunctions {
     public static void main(String[] args) {
         
                 // string functions
                 String str = "Tshashwat TTiwarI";
-                str = str.toLowerCase();
+                // str = str.toLowerCase();
                 System.out.println(str.toLowerCase());
                 System.out.println(str);
         
@@ -52,7 +52,7 @@ public class BasicFunctions {
                 System.out.println(name2 == name3);
                 System.out.println(name3 == name4);
                 System.out.println(name4 == name2);
-                System.out.println(name1 == name4);
+                System.out.println(name1 == name4);   //true because pointing to the object variable
         
                 name4.append("tiwari");
         
@@ -60,9 +60,16 @@ public class BasicFunctions {
                 System.out.println(name2 == name3);
                 System.out.println(name3 == name4);
                 System.out.println(name4 == name2);
-                System.out.println(name1 == name4);
+                System.out.println(name1 == name4);   //true because pointing to the object variable
 
-                
+                System.out.println(name1.equals(name2)); // false
+
+                System.out.println(name1.equals(name2)); // false
+                System.out.println(name2.equals(name3)); // false
+                System.out.println(name3.equals(name4)); // false
+                System.out.println(name4.equals(name2)); // false
+                System.out.println(name1.equals(name4)); // true because pointing to the object variable
+
         // To print the name of the company
         String email1 = "randomAvenger@hotgmail.com";
         String emailArr[] = email1.split("@");
@@ -75,11 +82,11 @@ public class BasicFunctions {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter a word");
-        // String word1 = sc.next();
-        int word1 = sc.nextInt();
+        String word1 = sc.next();
+        // int word1 = sc.nextInt();
         System.out.println("Enter a word please");
-        // String word2 = sc.next();
-        int word2 = sc.nextInt();
+        String word2 = sc.next();
+        // int word2 = sc.nextInt();
         System.out.println("Enter a line");
         String line1 = sc.nextLine();
         System.out.println("Enter next line");
