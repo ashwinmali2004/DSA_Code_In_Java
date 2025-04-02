@@ -95,5 +95,7 @@ public class BasicsOfStack {
         stack.pop();
         stack.printStack();
         System.out.println("peek:"+  stack.peek());
+
+        sc.close();
     }
 }

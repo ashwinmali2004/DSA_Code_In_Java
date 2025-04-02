@@ -13,7 +13,7 @@ public class MergeSort {
 
     static void merge(int A[],int mid, int low, int high){
         int i,j,k;
-        int B[]=new int[100];
+        int B[]=new int[A.length];
         i=low;
         j=mid+1;
         k=low;
@@ -51,7 +51,7 @@ public class MergeSort {
     static void mergeSort(int A[],int low,int high){
         int mid;
         if(low<high){
-            mid =(low+high)/2;
+            mid =low+(high-low)/2;
             mergeSort(A, low, mid);
             mergeSort(A, mid+1, high);
             merge(A, mid, low, high);
