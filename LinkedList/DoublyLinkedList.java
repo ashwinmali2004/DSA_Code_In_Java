@@ -156,7 +156,7 @@ public class DoublyLinkedList {
             head = null;
             tail = null;
             size--;
-            System.out.println("Deletion at Head is successful");
+            System.out.println("Deletion at Tail is successful");
             return;
         }
         DoublyNode<Integer> temp = head;
