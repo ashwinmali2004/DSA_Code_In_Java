@@ -91,11 +91,16 @@ public class BasicLinkedList{
 
     // To Print my List
     public void printList(){
-        Node<Integer> temp = head;
-        System.out.println("Data is : --> ");
-        while(temp!=null){
-            System.out.println(temp.data + ",");
-            temp=temp.next;
+        // Node<Integer> temp = head;
+        // System.out.println("Data is : --> ");
+        // while(temp!=null){
+        //     System.out.println(temp.data + ",");
+        //     temp=temp.next;
+        // }
+
+        // using forloop
+        for(Node temp = head; temp!=null; temp = temp.next){
+            System.out.println(temp.data + ", ");
         }
     }
 
