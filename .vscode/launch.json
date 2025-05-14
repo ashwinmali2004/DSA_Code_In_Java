@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "constructionTree",
+            "request": "launch",
+            "mainClass": "Tree.constructionTree",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "SortedArray",
             "request": "launch",
             "mainClass": "Arrays.SortedArray",
