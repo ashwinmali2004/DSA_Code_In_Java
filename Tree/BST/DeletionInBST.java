@@ -1,6 +1,6 @@
 package Tree.BST;
 
-import org.w3c.dom.Node;
+// import org.w3c.dom.Node
 
 class DeletionInBST {
     public class TreeNode {
@@ -18,7 +18,7 @@ class DeletionInBST {
 
        public static void main(String[] args) {
         DeletionInBST obj=new DeletionInBST();
-        // obj.deleteNode(null, 0)
+        obj.deleteNode(null, 0);
     }
 
     public TreeNode deleteNode(TreeNode root, int key) {
