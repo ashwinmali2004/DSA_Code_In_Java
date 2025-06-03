@@ -92,4 +92,32 @@ public class Questions {
         }
         return root;
     }
+
+    // 1373 LeetCode Maximum Sum BST in Binary Tree
+    // ----->check vaid BST + Do the sum (and return the Maximum Sum from BST's)
+    int ans;
+    public int maxSumBST(TreeNode root){
+        ans = 0;
+        dfs(root);
+        return ans;
+    }
+
+    public int[] dfs(TreeNode root){
+        if(root==null){
+            return new int[]{Integer.MAX_VALUE, Integer.MIN_VALUE, 0};
+        }
+        int leftSubtree[] = dfs(root.left);
+        int rightSubtree[] = dfs(root.right);
+        // if valid BST
+        if(root.val>leftSubtree[1] && root.val<rightSubtree[0]){
+            int curSum = leftSubtree[2]+root.val+rightSubtree[2];
+            ans = Math.max(ans, curSum);
+            int minVal = Math.max(root.val, leftSubtree[0]);
+            int maxVal = Math.max(root.val, rightSubtree[1]);
+            return new int[] {minVal, maxVal, curSum};
+        }
+        // if Not Valid BST
+        int maxSum = Math.max(leftSubtree[2],rightSubtree[2]);
+        return new int[]{Integer.MAX_VALUE, Integer.MIN_VALUE, maxSum};
+    }
 }
