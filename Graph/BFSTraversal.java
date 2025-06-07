@@ -33,7 +33,7 @@ public class BFSTraversal {
     public ArrayList<Integer> bfsOfGraphWithMultipleSource(int V, ArrayList<ArrayList<Integer>> adj) {
         // code here
         boolean[] visited = new boolean[V];
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();  
         ArrayList<Integer> res = new ArrayList<>();
         for(int i=0;i<V;i++){
             if(!visited[i]){
