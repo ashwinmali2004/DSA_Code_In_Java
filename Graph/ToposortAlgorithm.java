@@ -55,8 +55,6 @@ public class ToposortAlgorithm {
         for(int i=0;i<V;i++){
             adj.add(new ArrayList<>());
         }
-        
-        // Find Indegree Array..
         for(int[] edge : edges){
             int u = edge[0];
             int v = edge[1];
