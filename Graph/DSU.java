@@ -103,3 +103,11 @@ public class DSU {
         // Note:-You cant use DSU of Union by rank and union by size code
     }
 }
+
+/*
+ * List Of Questions Of DSU
+ * Q 684
+ * Q 990
+ * Q 1319
+ * Q 785
+*/
