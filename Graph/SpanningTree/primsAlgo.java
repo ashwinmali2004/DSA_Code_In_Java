@@ -43,3 +43,6 @@ public class primsAlgo {
     }
 
 }
+
+// Always Start with any random vertex
+// Act Greedy & pick the minnimum edge.
