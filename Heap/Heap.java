@@ -1,4 +1,4 @@
-package Tree;
+package Heap;
 
 import java.util.Arrays;
 
@@ -76,9 +76,12 @@ public class Heap {
 
     // Function to insert an element into the heap
     public void insert(int key) {
-        if (size == capacity) {
-            System.out.println("Overflow: Cannot insert element, heap is full.");
-            return;
+        // if (size == capacity) {
+        //     System.out.println("Overflow: Cannot insert element, heap is full.");
+        //     return;
+        // }
+        if(size+1>=capacity){
+            increaseCapacity();
         }
 
         heap[size] = key;
@@ -183,6 +186,15 @@ public class Heap {
         // Check if both left and right children are complete
         return (left >= size || heap[i] <= heap[left]) && (right >= size || heap[i] <= heap[right]) &&
                 isCompleteTree(left) && isCompleteTree(right);
+    }
+
+    public void increaseCapacity(){
+        capacity *= 2; //double the size
+        int newHeap[] = new int[capacity];
+        for(int i=0;i<size;i++){
+            newHeap[i] = heap[i];
+        }
+        heap = newHeap;
     }
 
     // Driver function to test the heap functionalities
