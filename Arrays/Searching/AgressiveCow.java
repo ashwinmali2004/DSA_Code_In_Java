@@ -1,4 +1,4 @@
-package Searching;
+package Arrays.Searching;
 
 import java.util.*;
 public class AgressiveCow {

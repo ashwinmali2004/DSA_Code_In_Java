@@ -1,4 +1,4 @@
-package Searching;
+package Arrays.Searching;
 public class kthElement {
     public static void main(String[] args) {
         int arr1[] = {2, 3, 6, 7, 9};

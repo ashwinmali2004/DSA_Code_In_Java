@@ -1,4 +1,4 @@
-package Searching;
+package Arrays.Searching;
 
 public class SearchAlgorithms {
     public static void main(String[] args) {
