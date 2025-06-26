@@ -10,7 +10,8 @@ public class QuestionsOnString {
         // To revers the given String
         printReverseString("abcde");
         printReverseString2("abcde");
-
+        reverseString3("abcde");
+    
         // To check that the String is Palindrome or not
         checkPalindrome("naman");
         checkPalindrome("Ashwin");
@@ -63,6 +64,24 @@ public class QuestionsOnString {
         //     ans.setCharAt(n-1-i, firstChar);
         // }
         System.out.println(ans.reverse().toString());
+    }
+
+    // 3rd method
+    public static void reverseString3(String input){
+        char ansArr[] = input.toCharArray();
+        int n = ansArr.length;
+        for(int i=0;i<n/2;i++){
+            char firstChar = ansArr[i];
+            char lastChar = ansArr[n-1-i];
+            ansArr[i] = lastChar;
+            ansArr[n-1-i] = firstChar;
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(ansArr[i]);
+            if((n-1==i)){
+                System.err.println();
+            }
+        }
     }
 
     // O(n/2) and O(1) 
