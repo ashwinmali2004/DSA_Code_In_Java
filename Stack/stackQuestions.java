@@ -122,6 +122,65 @@ public class stackQuestions {
         return ans;
     }
 
+    // Online Stock span (901)
+    // next Greater Element gfg
+    // help classmate gfg
+    // next Greater ElementII (503) leetcode
+    // Area of Hiistogram =>prevSmaller+nextSmaller element (84) leetcode
+    // Area of Rectangle => (85) AreaOf Histogram leetcode
+
+
+    // Q32 Longest Valid Parantheses(Leetcode)
+        // Applying solution with the custom Stack-->
+    public int longestValidParentheses(String s) {
+        int n = s.length();
+        if (n <= 1) return 0;
+        int stack[] = new int[n+1];
+        int index = -1;
+        int maxLength = 0;
+        stack[++index]=-1;
+        
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                stack[++index]=i;
+            } else {
+                index--;
+                if (index==-1) {
+                    stack[++index]=i;
+                } else {
+                    maxLength = Math.max(maxLength, i - stack[index]);
+                }
+            }
+        }
+        
+        return maxLength;
+    }
+
+// Using Without Custom Stack
+    // public int longestValidParentheses(String s) {
+    //     if (s.length() <= 1) return 0;
+    //     Stack<Integer> stack = new Stack<>();
+    //     stack.push(-1);
+    //     int maxLength = 0;
+        
+    //     for (int i = 0; i < s.length(); i++) {
+    //         char c = s.charAt(i);
+    //         if (c == '(') {
+    //             stack.push(i);
+    //         } else {
+    //             stack.pop();    
+    //             if (stack.isEmpty()) {
+    //                 stack.push(i);
+    //             } else {
+    //                 maxLength = Math.max(maxLength, i - stack.peek());
+    //             }
+    //         }
+    //     }
+        
+    //     return maxLength;
+    // }
+
     
     public static void main(String[] args) {
         // to count the number of reversals to take for the balancing the String
