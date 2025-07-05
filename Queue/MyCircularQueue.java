@@ -44,7 +44,7 @@ public class MyCircularQueue {
         if(isEmpty()){
             front=0;
             rear=0;
-        }else if(rear==capacity-1 && front!=0){
+        }else if(rear==capacity-1 && front!=0){ //circular insertion where the drawback of the Simple Queue is Resolved
             rear=0;
         }else{
             rear++;
@@ -59,10 +59,10 @@ public class MyCircularQueue {
             return -1;
         }
         int val = circularqueue[front];
-        if(front==rear){
+        if(front==rear){ //there is only single element than both -1
             front=-1;
             rear=-1;
-        }else if(front==capacity-1){
+        }else if(front==capacity-1){ //circular deletion
             front=0;
         }else{
             front++;

@@ -57,7 +57,7 @@ public class MyQueue {
             return -1;
         }
         int val = queue[front];
-        if(front==rear){
+        if(front==rear){    //deleting the last element of the queue
             front=-1;
             rear=-1;
         }else{
@@ -76,7 +76,7 @@ public class MyQueue {
             System.out.println("Queue is empty");
             return;
         }
-        for(int i=0;i<queue.length;i++){
+        for(int i=front;i<=rear;i++){
             System.out.print(queue[i]);
             if(i!=rear){
                 System.out.print(",");
