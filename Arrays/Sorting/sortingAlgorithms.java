@@ -6,13 +6,13 @@ public class sortingAlgorithms {
         printArray(arr, "Original array");
         // insertionSort(arr);
         // selectionSort(arr);
-        // bubbleSort(arr);
+        bubbleSort(arr);
         // brickSort(arr);
         // countSort(arr);
         // pigeonholeSort(arr);
         // cycleSort(arr);
         // cycleSort0ToN(arr);
-        cyclicSort(arr);
+        // cyclicSort(arr);
         printArray(arr, "Sorted array");
     }
 
@@ -61,11 +61,11 @@ public class sortingAlgorithms {
 
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
-        for (int i = 0; i <= n - 2; i++) {
+        for (int i = 0; i < n ; i++) {
             boolean flag = false; // for the optimization of the code
-            for (int j = 0; j <= n - 2 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    swap(arr, j, j + 1);
+            for (int j = i+1; j < n ; j++) {
+                if (arr[j] < arr[i]) {
+                    swap(arr, i, j);
                     flag = true;
                 }
                 if (flag = false)
