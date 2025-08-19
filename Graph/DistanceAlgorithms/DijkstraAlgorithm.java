@@ -4,6 +4,11 @@ import java.util.*;
 import java.lang.*;
 
 // This alhorithm works for the positive value distance only!
+// single source shortest path algorithm
+// Worked in directed as well as undirected graph
+// It does not work in negative weight graph
+// It is a type of greedy algorithm
+
 public class DijkstraAlgorithm {
     public int[] dijkstra(int V, int[][] edges, int src) {
         

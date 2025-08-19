@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuestionsPickNoPick",
+            "request": "launch",
+            "mainClass": "QuestionsPickNoPick",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Questions",
+            "request": "launch",
+            "mainClass": "Questions",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "TypesOfRecursion",
+            "request": "launch",
+            "mainClass": "TypesOfRecursion",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Basics",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "constructionTree",
             "request": "launch",
             "mainClass": "Tree.constructionTree",
