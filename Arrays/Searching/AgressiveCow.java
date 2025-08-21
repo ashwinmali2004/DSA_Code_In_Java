@@ -50,3 +50,6 @@ public class AgressiveCow {
         return false;
     }
 }
+
+
+// The above case is Max of Min is different from other Binary Search cases.
