@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Questions",
+            "request": "launch",
+            "mainClass": "HPE.Questions",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "QuestionsPickNoPick",
             "request": "launch",
             "mainClass": "QuestionsPickNoPick",
