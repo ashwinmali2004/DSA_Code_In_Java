@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaximumSumSubsequence",
+            "request": "launch",
+            "mainClass": "HPE.MaximumSumSubsequence",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "MaxScoreOperations",
+            "request": "launch",
+            "mainClass": "HPE.MaxScoreOperations",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "TreeDPMaximumSum",
+            "request": "launch",
+            "mainClass": "HPE.TreeDPMaximumSum",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "AncestorSubset",
+            "request": "launch",
+            "mainClass": "HPE.AncestorSubset",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "EvenDifference",
+            "request": "launch",
+            "mainClass": "HPE.EvenDifference",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "Questions",
             "request": "launch",
             "mainClass": "HPE.Questions",
