@@ -1,26 +1,52 @@
 package HPE;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArrayReconstruction {
     static final int MOD = 1_000_000_007;
-    public int numOfArrays(int n, int m, int k) {
-        Integer[][][] dp = new Integer[n + 1][m + 1][k + 1];
-        return dfs(n, m, k, 0, 0, 0, dp);
-    }
-    
-    int dfs(int n, int m, int k, int i, int currMax, int currCost, Integer[][][] dp) {
-        if (i == n) {
-            if (k == currCost) return 1;
-            return 0;
-        }
-        if (dp[i][currMax][currCost] != null) return dp[i][currMax][currCost];
-        int ans = 0;
-        ans += (long) currMax * dfs(n, m, k, i + 1, currMax, currCost, dp) % MOD;
-        if (currCost + 1 <= k) {
-            for (int num = currMax + 1; num <= m; num++) {
-                ans += dfs(n, m, k, i + 1, num, currCost + 1, dp);
-                ans %= MOD;
+
+    public static List<Integer> arrayCount(List<Integer> n, List<Integer> m, List<Integer> totalCost) {
+        int q = n.size();
+        List<Integer> result = new ArrayList<>();
+
+        for (int idx = 0; idx < q; idx++) {
+            int N = n.get(idx);
+            int M = m.get(idx);
+            int K = totalCost.get(idx);
+
+            long[][][] dp = new long[N + 1][M + 1][K + 1];
+
+            // base case: first element, no increases yet
+            for (int v = 1; v <= M; v++) {
+                dp[1][v][0] = 1;
             }
+
+            // fill dp
+            for (int len = 2; len <= N; len++) {
+                for (int max = 1; max <= M; max++) {
+                    for (int cost = 0; cost <= K; cost++) {
+
+                        // Case 1: pick ≤ max
+                        dp[len][max][cost] = (dp[len][max][cost] + dp[len - 1][max][cost] * max) % MOD;
+
+                        // Case 2: new maximum
+                        if (cost > 0) {
+                            for (int oldMax = 1; oldMax < max; oldMax++) {
+                                dp[len][max][cost] = (dp[len][max][cost] + dp[len - 1][oldMax][cost - 1]) % MOD;
+                            }
+                        }
+                    }
+                }
+            }
+
+            long ans = 0;
+            for (int max = 1; max <= M; max++) {
+                ans = (ans + dp[N][max][K]) % MOD;
+            }
+            result.add((int) ans);
         }
-        return dp[i][currMax][currCost] = ans;
+
+        return result;
     }
 }
