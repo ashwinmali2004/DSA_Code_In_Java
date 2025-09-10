@@ -15,6 +15,8 @@ public class Basics2 {
         fastExponentiation(1234567,5, 1000000007) ;
         factorial(5);
         findTrailingZerosInFactorial(30);
+        palindrome(1221);
+        newtonRaphsonSqRoot(25);
     }
 
 
@@ -105,6 +107,7 @@ public class Basics2 {
             }
             X = root;
         }
+        System.out.println("square root of "+num+" is "+(int)root);
         return root;
     }
     public static void GCD(int num1, int num2){
@@ -114,7 +117,7 @@ public class Basics2 {
                 System.out.println("GCD is:"+ min);
                 return;
             }
-            min--;
+            min--;  
         }
         int max = (num1<=num2)?num2:num1;
         System.out.println("GCD is:"+ max);
@@ -189,6 +192,20 @@ public class Basics2 {
         System.out.println(res);
     }
 
+    static void palindrome(int num){
+        int copy = num;
+        int res = 0;
+        while(num>0){
+            int n = num%10;
+            res = res*10+n;
+            num/=10;
+        }
+        if(copy==res){
+            System.out.println("Is Palindrome");
+        }else{
+            System.out.println("Not a Palindrome");
+        }
+    }
 }
 
 

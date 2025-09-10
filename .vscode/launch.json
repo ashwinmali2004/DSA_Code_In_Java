@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Basics2",
+            "request": "launch",
+            "mainClass": "Basics2",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "MaximumSumSubsequence",
             "request": "launch",
             "mainClass": "HPE.MaximumSumSubsequence",
