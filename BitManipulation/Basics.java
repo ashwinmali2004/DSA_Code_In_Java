@@ -10,11 +10,12 @@ public class Basics {
         // printOddEven(30);
         // int res= setIthBit(32,4);
         // printBits(res);
-        // printBits(27);
+        // printBits(2);
         // int res = unsetIthBit(27, 3);
         // printBits(res);
         // isPowerOfTwo(32);
         // isPowerOfTwo(33);
+        // numOfSetBits(33);
     }
 
     public static int bitmanipulation(int target){
@@ -62,4 +63,13 @@ public class Basics {
     public static int unsetRightMostSetBit(int num){
         return (num & num-1);
     }
-}
+
+    public static void numOfSetBits(int num){
+        int count=0;
+        while(num!=0){
+            count++;
+            num = unsetRightMostSetBit(num);
+        }
+        System.out.println(count);
+    }
+}   
