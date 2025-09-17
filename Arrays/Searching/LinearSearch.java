@@ -10,16 +10,17 @@ public class LinearSearch {
                 {8,1,2,2,3},
                 {5,5,5,8,4}
         };
-         linearSearch(arr,2, false);
+        linearSearch(arr,2, false);
         linearSearch(arr,2, true);
         linearSearchMultiple(arr,2);
-          findMax(arr);
-          findMin(arr);
+        findMax(arr);
+        findMin(arr);
         linearSearch2d(arr2d,8,false);
         linearSearch2d(arr2d,8,true);
-          linearSearchMultiple2d(arr2d,5);
-         findMaximumSumSubarray(arr2d);
+        linearSearchMultiple2d(arr2d,5);
+        findMaximumSumSubarray(arr2d);
     }
+    
     public static void findMaximumSumSubarray(int arr[][]){
         int max = Integer.MIN_VALUE;
         int resIndex = -1;

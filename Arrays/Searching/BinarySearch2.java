@@ -9,16 +9,16 @@ public class BinarySearch2 {
     public static void main(String[] args) {
         int arr[] = {2,2,4,5,7,9,25,56,88,94};
         int arr1[] = {0,0,0,0,0,1,1,1,1,1};
-        int arr2[] = {22,2,3,5,6,8,9,11,13,22};
+        // int arr2[] = {22,2,3,5,6,8,9,11,13,22};
         findMinimumAbsoluteDifference(arr,0);
         findElementInInfiniteSortedArray(arr,57);
         findFirstOneInaBinaryInfiniteSortedArray(arr1);
         // increasing and decreasing array
         int barr[] = {2,5,7,11,22,99,10,2,1};
-        int baarr[] = {22,1,0};
+        // int baarr[] = {22,1,0};
         // System.out.println(bitonicMinElement(barr));
         System.out.println(bitonicMaxElement(barr));
-
+        System.out.println(findAllOccurance(arr1, 1));
     }
 
     // find index of peak element and do + 1
@@ -55,6 +55,22 @@ public class BinarySearch2 {
         range[1] = end;
 
         return range;
+    }
+
+    static int binarySearchInRange(int arr[], int target, int start, int end){
+        int ans = -1;
+        while (start<=end){
+            int mid = start + (end-start)/2;
+            if(arr[mid] == target){
+                ans = mid;
+                break;
+            } else if(arr[mid]<target){
+                start = mid+1;
+            } else {
+                end = mid-1;
+            }
+        }
+        return ans;
     }
 
     static void findMinimumAbsoluteDifference(int arr[], int target){
@@ -97,21 +113,36 @@ public class BinarySearch2 {
         System.out.println("Minimum Absolute difference is :"+ res);
     }
 
-    static int binarySearchInRange(int arr[], int target, int start, int end){
-        int ans = -1;
-        while (start<=end){
-            int mid = start + (end-start)/2;
-            if(arr[mid] == target){
-                ans = mid;
-                break;
-            } else if(arr[mid]<target){
-                start = mid+1;
-            } else {
-                end = mid-1;
+    
+    public static int findAllOccurance(int[] arr, int target){
+        int start=0, end=arr.length-1;
+        int[] ind = {-1, -1};
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr[mid]==target){
+                ind[0]=mid;
+                end=mid-1;
+            }else if(arr[mid]>target){
+                end=mid-1;
+            }else{
+                start=mid+1;
             }
         }
-        return ans;
+        start=0;end=arr.length-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr[mid]==target){
+                ind[1]=mid;
+                start=mid+1;
+            }else if(arr[mid]>target){
+                end=mid-1;
+            }else{
+                start=mid+1;
+            }
+        }
+        return ind[1]-ind[0]+1;
     }
+
     static int binarySearchFirstOccurrence(int arr[], int target,int start, int end){
         int ans = -1;
         while (start<=end){
@@ -154,4 +185,5 @@ public class BinarySearch2 {
         }
         return res;
     }
+
 }

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearch2",
+            "request": "launch",
+            "mainClass": "Arrays.Searching.BinarySearch2",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "Arrays.Searching.LinearSearch",
+            "projectName": "CodeWithAshwin_a6d5cb4e"
+        },
+        {
+            "type": "java",
             "name": "Basics2",
             "request": "launch",
             "mainClass": "Basics2",
